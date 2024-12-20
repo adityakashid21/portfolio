@@ -7,46 +7,53 @@
     <title>About Me - Aditya Prakash Kashid</title>
     <style>
         body {
-            background: black;
+            background: #121212;
+            /* Dark black background */
             color: #fff;
+            /* White text for readability */
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            justify-content: flex-start;
+            min-height: 100vh;
         }
         
         .container {
             text-align: center;
-            padding: 20px;
-            border: 2px solid #00aaff;
+            background: linear-gradient(145deg, #1e1e1e, #292929);
+            /* Subtle gradient for modern feel */
+            padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 0 30px rgba(0, 170, 255, 0.5);
-            max-width: 600px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 170, 255, 0.2);
+            margin-top: 20px;
+            width: 90%;
+            max-width: 800px;
         }
         
         h1 {
-            font-size: 3rem;
-            background: linear-gradient(90deg, #00c3ff, #ffff1c, #ff0080);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradient-text 3s infinite;
-        }
-        
-        @keyframes gradient-text {
-            0% {
-                background-position: 0%;
-            }
-            100% {
-                background-position: 100%;
-            }
+            font-size: 2.8rem;
+            color: #00aaff;
+            /* Bright blue heading */
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 0px 3px 6px rgba(0, 170, 255, 0.7);
         }
         
         p {
             font-size: 1.2rem;
-            line-height: 1.6;
+            line-height: 1.8;
+            margin: 5px 0;
+        }
+        
+        .contact {
+            font-size: 1.1rem;
+            color: #ffd700;
+            /* Golden text for emphasis */
+            margin-top: 10px;
         }
         
         a {
@@ -59,21 +66,43 @@
             text-shadow: 0 0 10px #00aaff;
         }
         
-        .contact {
-            margin-top: 15px;
-            font-size: 1.1rem;
-            color: #ffd700;
+        .cv-container {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(145deg, #1e1e1e, #292929);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 170, 255, 0.2);
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .cv-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 6px 10px rgba(0, 170, 255, 0.3);
+        }
+        
+        .cv-container img:hover {
+            transform: scale(1.05);
+            /* Zoom-in effect */
+            box-shadow: 0px 12px 20px rgba(0, 170, 255, 0.5);
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>ADITYA PRAKASH KASHID</h1>
-        <p><strong>University:</strong> UKA TARSADIA UNIVERSITY</p>
-        <p><strong>Course:</strong> BTECH IT</p>
+        <h1>Aditya Prakash Kashid</h1>
+        <p><strong>University:</strong> Uka Tarsadia University</p>
+        <p><strong>Course:</strong> BTech IT</p>
         <p class="contact"><strong>Contact:</strong> 9730859883</p>
         <p class="contact"><strong>Email:</strong> <a href="mailto:adikashid21@gmail.com">adikashid21@gmail.com</a></p>
+    </div>
+
+    <div class="cv-container">
+        <img src="/assets/images/aditya cv-1.png" alt="Aditya Prakash Kashid CV">
     </div>
 </body>
 
